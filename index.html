@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Recipes by Restrictions</title>
-
+    <title>Oh, Snap!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <!-- jqueryui -->
-    <!-- <script
-    src=“https://code.jquery.com/ui/1.12.1/jquery-ui.min.js”
-    integrity=“sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=”
-    crossorigin=“anonymous”></script> -->
-<!-- font awesome!!! -->
-
-    <!-- autocompete -->
-    <link rel="stylesheet" href="./assets/css/awesomplete.css"/>
+    <!-- animate css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <!--Style CSS-->
     <link href="https://fonts.googleapis.com/css?family=Life+Savers|Magra" rel="stylesheet">
-    
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Life+Savers|Magra" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
 
 
@@ -51,62 +40,24 @@
           </div>
         </div>
 
-    <section id="restrictionsDiv">
-      
+    
+  <!-- start of introductory card groups: landing page -->
+    <div class="divHolder">
 
-      <!-- LAURYN'S FIREBASE -->
-      <!-- start search box -->
-      <div class="container searchBox">
-          <div class="form-group">
-            <label for="pantry-add">Enter Pantry Item:</label>
-            <div class="pantryForm">
-              <input id="basics" type="text">
-              <button class="btn pantryBtn" id="pantry-input" type="submit">Add Item</button>
-            </div>
-          </div>
-          
-          <div class="pantryBtnDiv">
-            <h6>Pantry content:</h6>
-            <button class="btn" id="pantry-submit" type="submit">Add All</button>
-          </div>
-          <div class="pantryList">
-            <div>
-              <ul id="temporaryPantry">
+    <!-- introduction/explanation of app -->
+      <div class="text-secondary intro" >
+        <p class="introText">No idea what to make with what you have? Tired of Pantry Surprise? Don't want to face people at the grocery store?</p>
+        <p class="introText">&ldquo;Oh, Snap&#33;&rdquo; has got you covered. Click on the apple to find recipes that use what you already have.</p>
+        
+      </div> 
 
-              </ul>
-            </div>
-          </div>
-            
-      </div><!-- END search box -->
-
-            <!-- PANTRY SEARCH -->
-          <div class="pantrySearch">
-            <!-- LAURYN'S FIREBASE -->
-            <div class="pantry-current">
-              <p>These items are currently in your pantry. Click "&times;" to remove an item. Click "&#10010;" to add it to your ingredients search.</p>
-            </div>
-             <!-- JOSH'S API -->
-            <div class="recSearch">
-              <h6>Think you&apos;re ready?</h6>
-              <div class="card-body text-secondary">
-                <button class="food-icon-restr" id="peanut-free">Oh, Snap!</button>
-              </div>
-            </div>
-          </div><!--  end pantry search -->
-
-          <!-- cards fill here: -->
-          <div class="cardGroup"></div>
-
-
-     
-      
-    </section>
+      <!-- the icon with link to next page: -->
+    
 
 
       <!-- the icon with link to next page: -->
       <div class="icon">
         <a href="./page2.html"><button id="circleBtn"><img class="iconImg" src="assets/css/images/basket.svg"></button></a>
-        <p></p>
       </div>
     </div><!--  ends card group -->
   </div>
