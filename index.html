@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipes by Restrictions</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- jqueryui -->
+    <!-- <script
+    src=“https://code.jquery.com/ui/1.12.1/jquery-ui.min.js”
+    integrity=“sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=”
+    crossorigin=“anonymous”></script> -->
+<!-- font awesome!!! -->
+
+    <!-- autocompete -->
+    <link rel="stylesheet" href="./assets/css/awesomplete.css"/>
+    <!--Style CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers|Magra" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers|Magra" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  </head>
+
+
+
+  <body>
+    <div id="wrap">
+    <!--Navigation Bar-->
+    <div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page2.html">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <!--Jumbotron-->
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-5 snap">Oh, Snap!</h1>
+            <p class="lead"></p>
+          </div>
+        </div>
+
+    <section id="restrictionsDiv">
+      
+
+      <!-- LAURYN'S FIREBASE -->
+      <!-- start search box -->
+      <div class="container searchBox">
+          <div class="form-group">
+            <label for="pantry-add">Enter Pantry Item:</label>
+            <div class="pantryForm">
+              <input id="basics" type="text">
+              <button class="btn pantryBtn" id="pantry-input" type="submit">Add Item</button>
+            </div>
+          </div>
+          
+          <div class="pantryBtnDiv">
+            <h6>Pantry content:</h6>
+            <button class="btn" id="pantry-submit" type="submit">Add All</button>
+          </div>
+          <div class="pantryList">
+            <div>
+              <ul id="temporaryPantry">
+
+              </ul>
+            </div>
+          </div>
+            
+      </div><!-- END search box -->
+
+            <!-- PANTRY SEARCH -->
+          <div class="pantrySearch">
+            <!-- LAURYN'S FIREBASE -->
+            <div class="pantry-current">
+              <p>These items are currently in your pantry. Click "&times;" to remove an item. Click "&#10010;" to add it to your ingredients search.</p>
+            </div>
+             <!-- JOSH'S API -->
+            <div class="recSearch">
+              <h6>Think you&apos;re ready?</h6>
+              <div class="card-body text-secondary">
+                <button class="food-icon-restr" id="peanut-free">Oh, Snap!</button>
+              </div>
+            </div>
+          </div><!--  end pantry search -->
+
+          <!-- cards fill here: -->
+          <div class="cardGroup"></div>
+
+
+     
+      
+    </section>
+
+
+      <!-- the icon with link to next page: -->
+      <div class="icon">
+        <a href="./page2.html"><button id="circleBtn"><img class="iconImg" src="assets/css/images/basket.svg"></button></a>
+        <p></p>
+      </div>
+    </div><!--  ends card group -->
+  </div>
+  </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+              <p>Joshua Wise | Katy Cassidy | Lauryn McFarland | Louis Anchondo</p>
+          </div>
+        </div>
+    </footer>
+
+
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/ecb99ae562.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+      
+  </body>
+</html>
+
