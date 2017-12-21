@@ -40,32 +40,9 @@ function runRestrictedDietAPI(restrictDietChoice, ingredients){
      });    
 };
 
-  //  function createRecipeCards(response){
-  //   // $(".cardGroup").empty();
-  //      $.each(response.hits, function(index, value){
-  //       var hits = index;
-  //         $(".cardGroup").append(`
-  //           <div class="recipeCard">
-  //             <div class="imgDiv">
-  //               <img src="${value.recipe.image}" alt="${value.recipe.label}">
-  //             </div>
-  //             <div class="recipeLabel">
-  //               <h5>${value.recipe.label}</h5>
-  //             </div>
-  //             <p class = "cals">Individual Serving Calories: ${parseInt(value.recipe.calories/value.recipe.yield)}</p>
-  //             <ul id="${index}">
-  //             </ul>
-  //             <button class="recipeBtn"><a href="${value.recipe.url}">Link to source</a></button>
-  //             <button class="nutBtn"><a href='javascript:void(0);'>Nutritional Value</a></button>  
-  //           </div>
-  //            `)
-  //           $.each(value.recipe.ingredients, function(index, value){
-  //             $('#'+hits).append(`<li>${value.text}</li>`)  
-  //           })
-  //      });   
-  //  }
+ 
   function createRecipeCards(response){
-    // $(".cardGroup").empty();
+     $(".cardGroup").empty();
        $.each(response.hits, function(index, value){
         var hits = index;
           $(".cardGroup").append(`
@@ -140,6 +117,12 @@ function pantryStorage(pantry){
 
 $("#pantry-input").on("click", function(event) {
   event.preventDefault();
+  if($('#basics').val()){
+    $('#basics').val("");
+    $('#errMsg').remove();
+  }else{
+    $('#basics').append('<div id="errMsg">Please enter value in text box</div>');
+  }
       // console.log($("#pantry-add").val().trim());
     $("#temporaryPantry").empty();
       pantry.push($("#basics").val().trim());
