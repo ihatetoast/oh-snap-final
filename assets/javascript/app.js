@@ -117,20 +117,24 @@ function pantryStorage(pantry){
 
 $("#pantry-input").on("click", function(event) {
   event.preventDefault();
-  if($('#basics').val()){
-    $('#basics').val("");
-    $('#errMsg').remove();
+ if($('#basics').val()==""){
+    
+    $('#lblPntry').text('Please enter something in text box');
+    
   }else{
-    $('#basics').append('<div id="errMsg">Please enter value in text box</div>');
-  }
-      // console.log($("#pantry-add").val().trim());
-    $("#temporaryPantry").empty();
-      pantry.push($("#basics").val().trim());
-      console.log(pantry);
-      console.log("added to pantry");
-      $.each(pantry, function(index,value){
-        $("#temporaryPantry").append(`<li><i class="fa fa-cutlery" aria-hidden="true"></i> ${value}</li>`);
-    });
+   
+    $('#lblPntry').text('Enter Pantry Item:');
+    
+    // console.log($("#pantry-add").val().trim());
+  $("#temporaryPantry").empty();
+    pantry.push($("#basics").val().trim());
+    $('#basics').val("");
+    console.log(pantry);
+    console.log("added to pantry");
+    $.each(pantry, function(index,value){
+      $("#temporaryPantry").append(`<li><i class="fa fa-cutlery" aria-hidden="true"></i> ${value}</li>`);
+  });
+}
       //add something tp clear out previour text
   });
 
